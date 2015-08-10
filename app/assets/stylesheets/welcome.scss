@@ -1,3 +1,126 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  color: #cbc7ba;
+  font-size: 5em;
+  line-height: .5;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  font-family: 'Graduate', cursive;
+  text-shadow: 5px 5px 5px rgba(0,0,0,.5);
+  text-align: center;
+}
+
+thead {
+  font-family: 'Graduate', cursive;
+  color: #cbc7ba;
+}
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+input.cmn-toggle-yes-no + label {
+  padding: 2px;
+  width: 300px;
+  height: 60px;
+}
+input.cmn-toggle-yes-no + label:before,
+input.cmn-toggle-yes-no + label:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #faf9f9;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+  font-family: 'Graduate', cursive;
+  font-size: 1em;
+  text-align: center;
+  line-height: 60px;
+}
+input.cmn-toggle-yes-no + label:before {
+  background-color: #dddddd;
+  content: attr(data-off);
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no + label:after {
+  background-color: #39ac2f;
+  content: attr(data-on);
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no:checked + label:before {
+  transform: rotateY(180deg);
+}
+input.cmn-toggle-yes-no:checked + label:after {
+  transform: rotateY(0);
+}
+
+.spread {
+  text-align: center;
+  background-color: white;
+}
+
+.switch {
+  box-sizing: border-box;
+}
+
+.card {
+  box-shadow: 0 0 8px 2px rgba(0,0,0,.75);
+  border: 2px white;
+  border-style: dashed;
+  width: 750px;
+  background-color: #613a08;
+  color: black;
+  margin:-250px 0px 5px 230px;
+  font-size: 2em
+}
+
+.bet {
+  font-size: 1.5em;
+  width: 302px;
+  font-family: 'Graduate', cursive;
+  color: red;
+}
+
+span.bet_text {
+  font-family: 'Graduate', cursive;
+  color: #cbc7ba;
+  margin-left: 15px;
+}
+
+.button {
+  font-family: 'Graduate', cursive;
+  font-size:2em;
+  padding:5px;
+  background-color: #d62d20;
+  border: 1px solid #666;
+  color:#000;
+  text-decoration:none;
+  margin-left: 229px;
+  width: 757px;
+}
+
+.button:hover {
+  background-color: #c0281c;
+}
+
+.button:active {
+  background-color: #ffa700;
+}
