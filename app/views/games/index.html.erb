@@ -1,0 +1,6 @@
+<h1>Games</h1>
+<% @games.each do |game| %>
+  <div class="games">
+    <p>Game #<%= link_to game.game_number, game %></p>
+  </div>
+<% end %>

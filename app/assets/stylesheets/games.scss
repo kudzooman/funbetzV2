@@ -1,0 +1,19 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.games {
+  font-family: 'Graduate', cursive;
+  font-size: 2em;
+  text-align: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: #c0281c;
+    }
+    a:active {
+      color: #ffa700;
+    }
+}
