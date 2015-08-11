@@ -1,4 +1,9 @@
 <h1>Games</h1>
+
+<div class="new_game">
+  <p><%= link_to "New", new_game_path %></p>
+</div>
+
 <% @games.each do |game| %>
   <div class="games">
     <p>Game #<%= link_to game.game_number, game %></p>

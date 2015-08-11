@@ -1,2 +1,22 @@
-<h1>Games#new</h1>
-<p>Find me in app/views/games/new.html.erb</p>
+<%= form_for @game do |f| %>
+
+  <p><%= f.label :game_number %>:
+  <%= f.text_field :game_number %></p><br >
+
+  <p><%= f.label :favorite %>:
+  <%= f.text_field :favorite %></p><br >
+
+  <p><%= f.label :spread %>:
+  <%= f.text_field :spread %></p><br >
+
+  <p><%= f.label :underdog %>:
+  <%= f.text_field :underdog %></p><br >
+
+  <p><%= f.label :favorite_score %>:
+  <%= f.text_field :favorite_score %></p><br >
+
+  <p><%= f.label :underdog_score %>:
+  <%= f.text_field :underdog_score %></p><br >
+
+  <%= f.submit "Save" %>
+<% end %>

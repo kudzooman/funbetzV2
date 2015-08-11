@@ -1,4 +1,10 @@
-<h1>Game #1</h1>
+<div class="back_to_games">
+  <p><%= link_to "Games", games_path %></p>
+</div>
+
+<div class="game_number">
+  <h1>Game #<%= @game.game_number %></h1>
+</div>
 
 <div class="favorite">
   <p><%= @game.favorite %></p>
@@ -18,4 +24,8 @@
 
 <div class="underdog_score">
   <p><%= @game.underdog_score %></p>
+</div>
+
+<div class="edit_game">
+  <p><%= link_to "Edit", edit_game_path(@game) %></p>
 </div>
